@@ -13,7 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class AtmApplication extends SpringBootServletInitializer{
 	
 	private static Logger logger = LogManager.getLogger(AtmApplication.class);
-
+	
 	public static void main(String[] args) {
 		logger.info("Starting Spring Boot application..");
 		ApplicationContext appcontext = SpringApplication.run(AtmApplication.class, args);
@@ -22,5 +22,4 @@ public class AtmApplication extends SpringBootServletInitializer{
 			System.out.println("Bean Name: " + name);
 		}
 	}
-
 }
